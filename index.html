@@ -5,9 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SoSa 2023</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  Welcome to the Party!
-  
+  <svg width="100%" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+          <linearGradient id="goldShimmerLinear" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#d3b057;" />
+              <stop offset="30%" style="stop-color:#f2e0b2;" />
+              <stop offset="50%" style="stop-color:#f2e0b2;" />
+              <stop offset="70%" style="stop-color:#f5e8c9;" />
+              <stop offset="100%" style="stop-color:#d3b057;" />
+          </linearGradient>
+      </defs>
+
+      <!-- Background Rectangle -->
+      <rect x="0" y="0" width="600" height="150" fill="url(#goldShimmerLinear)"/>
+
+      <!-- Black Background for Text and Decorative Lines -->
+      <rect x="0" y="0" width="600" height="150" fill="#000" opacity="1"/>
+
+      <!-- Outer Decorative Frame -->
+      <rect x="10" y="10" width="580" height="130" fill="none" stroke="url(#goldShimmerLinear)" stroke-width="3"/>
+      <path d="M 10 75 Q 300 15 590 75" fill="none" stroke="url(#goldShimmerLinear)" stroke-width="3"/>
+      <path d="M 10 75 Q 300 135 590 75" fill="none" stroke="url(#goldShimmerLinear)" stroke-width="3"/>
+
+      <!-- Inner Decorative Frame -->
+      <rect x="50" y="35" width="500" height="80" fill="none" stroke="url(#goldShimmerLinear)" stroke-width="2"/>
+      <circle cx="50" cy="75" r="20" fill="none" stroke="url(#goldShimmerLinear)" stroke-width="2"/>
+      <circle cx="550" cy="75" r="20" fill="none" stroke="url(#goldShimmerLinear)" stroke-width="2"/>
+
+      <!-- Decorative Dots -->
+      <circle cx="50" cy="35" r="5" fill="url(#goldShimmerLinear)"/>
+      <circle cx="550" cy="35" r="5" fill="url(#goldShimmerLinear)"/>
+      <circle cx="50" cy="115" r="5" fill="url(#goldShimmerLinear)"/>
+      <circle cx="550" cy="115" r="5" fill="url(#goldShimmerLinear)"/>
+
+      <!-- Text content inside the SVG -->
+      <text x="50%" y="50%" alignment-baseline="central" text-anchor="middle" font-size="30" fill="url(#goldShimmerLinear)" font-family="GoudyOldStyle, 'Times New Roman', Times, serif">S&S 2023</text>
+  </svg>
+
+
+  <h1>Welcome to the Party</h1>
+  <p>
+    It is an honor to call you our guest,
+    and we thank you for celebrating with us!
+    Your presence warms our hearts <br>🤍
+  </p> 
+  <p>– Sophia & Samuel</p>
+
+  <p class="secondary">
+    If you wish, help us embark on our journey. Every <em>bit</em> is cherished.
+  </p> 
+  <a class="link" href="https://account.venmo.com/u/sammyholmes">Venmo</a>
+  <!-- <a class="link" href="">Zelle</a> -->
+  <a class="link" href="bitcoin:bc1qty53d7ws8vtr9klz7jpks5ktm9v70h47tn6uwk">Bitcoin</a>
+  <a class="link" href="ethereum:0x06F55C69D77465cd28692C8be107096A418f7adF">Ethereum</a>
 </body>
 </html>
